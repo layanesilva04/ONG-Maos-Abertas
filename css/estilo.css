@@ -237,3 +237,17 @@ button:hover{
         font-size: var(--tamanho-sm);
     }
 }
+.skip-link{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--cor1);
+    color: var(--cor-branca);
+    padding: 8px 12px;
+    border: 2px solid var(--cor0);
+    text-decoration: none;
+    z-index: 1000;
+}
+.skip-link:focus{
+    top: 10px;
+}
