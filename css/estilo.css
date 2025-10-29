@@ -237,3 +237,29 @@ button:hover{
         font-size: var(--tamanho-sm);
     }
 }
+#toogle-mode{
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color:var(--cor5);
+color: #fff;
+font-size: 10px;
+border: none;
+cursor: pointer;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+transition: all 0.3s ease;
+}
+#toggle-mode:hover {
+background-color: var(--cor2);
+}
+body.dark #toggle-mode {
+background-color: #f1f1f1;
+color: #121212;
+}
+body.dark{
+    background-color: var(--cor5);
+    color: var(--cor0);
+}

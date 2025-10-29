@@ -44,13 +44,14 @@ nav.classList.toggle('active');
 
 carregarPagina("index");
 
+const botao = document.getElementById('toggle-mode');
 
+botao.addEventListener('click', () => {
+document.body.classList.toggle('dark');
 
-
-
-/*const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav ul');
-
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });*/
+if (document.body.classList.contains('dark')) {
+botao.textContent = '☀️ Modo Claro';
+} else {
+botao.textContent = '🌙 Modo Escuro';
+}
+});
