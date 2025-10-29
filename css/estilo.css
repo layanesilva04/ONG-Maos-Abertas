@@ -237,3 +237,7 @@ button:hover{
         font-size: var(--tamanho-sm);
     }
 }
+:focus-visible{
+    outline: 3px solid var(--cor1);
+    outline-offset: 2px;
+}
